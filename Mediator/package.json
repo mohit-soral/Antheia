@@ -1,0 +1,18 @@
+{
+  "name": "arduino",
+  "version": "1.0.0",
+  "description": "to read serial data from Arduino connected via USB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohit Soral",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^13.0.1",
+    "fast-csv": "^2.4.1",
+    "fs": "0.0.1-security",
+    "nodemailer": "^4.4.1",
+    "serialport": "^6.0.4"
+  }
+}
