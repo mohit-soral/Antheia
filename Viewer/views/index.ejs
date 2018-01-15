@@ -1,0 +1,41 @@
+<% include partials/header %>
+
+<div>&nbsp;</div><div>&nbsp;</div>
+<div>&nbsp;</div><div>&nbsp;</div>
+
+<div class="col-md-4">&nbsp;</div>
+<div class='container col-md-4'>
+	<div class='panel panel-default'>
+		<div class='panel-heading'>
+				<label>Antheai</label>
+		</div>
+
+		<div class='panel-body'>
+			<table class='table table-condensed'>
+				<tr><th colspan='2' class='bg-info'>Controllers</th></tr>
+				<form>
+					<tr>
+						<td>Water Supply</td>
+						<td>
+							<input type="checkbox" name="water-supply" id="water-supply"></input>
+							<input type="hidden" id="water-supply-toggle" name="water-supply-toggle" value=""></input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Test LED</td>
+						<td>
+							<input type="checkbox" name="test-led" id="test-led"></input>
+							<input type="hidden" id="test-led-toggle" name="test-led-toggle" value=""></input>
+						</td>
+					</tr>
+					<tr><td colspan='2'>
+						<input class='btn btn-info pull-right btn-sm' type='submit' value='Submit' formmethod='POST' formaction='/water'></input>
+					</td></tr>
+				</form>
+			</table>
+		</div>
+	</div>
+</div>
+
+<% include partials/footer %>

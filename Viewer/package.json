@@ -1,0 +1,26 @@
+{
+  "name": "viewer",
+  "version": "1.0.0",
+  "description": "Is the front end of the system, displaying the performance of the system. Also allows control to certail level",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohit-soral/Antheia.git"
+  },
+  "author": "Mohit Soral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohit-soral/Antheia/issues"
+  },
+  "homepage": "https://github.com/mohit-soral/Antheia#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "serialport": "^6.0.4"
+  }
+}

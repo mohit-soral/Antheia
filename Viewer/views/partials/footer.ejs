@@ -1,0 +1,33 @@
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="/js/bootstrap-switch.min.js"></script>
+		<script>
+			$("[name='water-supply']").bootstrapSwitch();
+			$('input[name="water-supply-toggle"]').val('off');
+			$("[name='test-led']").bootstrapSwitch();
+			$('input[name="test-led-toggle"]').val('off');
+		</script>
+		<script>
+			$('#water-supply').on('switchChange.bootstrapSwitch', function () {
+				if ($("#water-supply").bootstrapSwitch('state') === true) {
+			        console.log('On');
+				    $('input[name="water-supply-toggle"]').val('on');
+			    }
+			    else {
+			        console.log('Off');
+			        $('input[name="water-supply-toggle"]').val('off');
+			    }
+			});
+			$('#test-led').on('switchChange.bootstrapSwitch', function () {
+				if ($("#test-led").bootstrapSwitch('state') === true) {
+			        console.log('On');
+				    $('input[name="test-led-toggle"]').val('on');
+			    }
+			    else {
+			        console.log('Off');
+			        $('input[name="test-led-toggle"]').val('off');
+			    }
+			})
+		</script>
+	</body>
+</html>
